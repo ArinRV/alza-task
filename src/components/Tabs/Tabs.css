@@ -1,0 +1,35 @@
+.tab-nav {
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+}
+
+.tab, .selected-tab {
+  background-color: #ecf5fe;
+  border: 1px solid #e8e8e8;
+  border-bottom: none;
+  box-sizing: border-box;
+  color: #5d5d5d;
+  display: block;
+  height: 40px;
+  padding: 10px 14px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.selected-tab {
+  background-color: rgb(204, 233, 250);
+}
+
+.tab:hover, .selected-tab:hover {
+  background-color: rgb(204, 233, 250);
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  margin: 0 0 0 3px;
+  position: relative;
+}/*# sourceMappingURL=Tabs.css.map */

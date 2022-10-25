@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.stars-container {
+  --rating-max: 5;
+  --rating-content: "★★★★★";
+  --rating-inactive-color: #cccccc;
+  --rating-background: #ffdd00;
+  --rating-value: 0;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating::before {
+  --rating-percent: calc(var(--rating-value) / var(--rating-max) * 100%);
+  content: var(--rating-content);
+  background: linear-gradient(90deg, var(--rating-background) var(--rating-percent), var(--rating-inactive-color) var(--rating-percent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}/*# sourceMappingURL=RatingStars.css.map */

@@ -1,0 +1,29 @@
+.category-tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-tile {
+  margin: 4px;
+  flex-basis: calc(20% - 8px);
+  align-items: center;
+  a {
+    height: 50px;
+    box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 10%);
+    background-color: #ecf5fe;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+  a:hover {
+    background-color: rgb(204, 233, 250);
+  }
+}
+
+@media (max-width: 769px) {
+  .category-tile {
+    flex-basis: calc(50% - 8px);
+  }
+}
