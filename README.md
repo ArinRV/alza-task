@@ -1,1 +1,1 @@
-# Single page web application made with React, which fetches the products from Alza api
+# Single page React web app, which fetches the products from Alza api
